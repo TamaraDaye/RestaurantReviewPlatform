@@ -32,5 +32,5 @@ class CreateUpdateUserSerializer(serializers.ModelSerializer):
         instance.save()
         return instance
 
-    def to_representation(self, instance):
+    def to_representation(self, instance):  # pyright: ignore[]
         return UserSerializer(instance, context=self.context).data
