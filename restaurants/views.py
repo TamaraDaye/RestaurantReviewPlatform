@@ -3,6 +3,7 @@ from .serializers import RestaurantSerializer, ReviewSerializer
 from rest_framework.permissions import AllowAny, IsAdminUser, IsAuthenticated
 
 from .models import Restaurant, Review
+import rabbit.producer
 # Create your views here.
 
 
